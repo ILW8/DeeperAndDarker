@@ -94,18 +94,18 @@ public class DDAdvancements implements Consumer<Consumer<Advancement>> {
                 .rewards(AdvancementRewards.Builder.experience(50))
                 .save(advancementConsumer, path("find_ancient_temple"));
 
-        Advancement.Builder.advancement().parent(findAncientTemple)
-                .display(
-                        DDItems.SCULK_TRANSMITTER,
-                        Component.translatable(id + "obtain_sculk_transmitter.title"),
-                        Component.translatable(id + "obtain_sculk_transmitter.description"),
-                        null,
-                        FrameType.TASK,
-                        true,
-                        true,
-                        false
-                ).addCriterion("sculk_transmitter", InventoryChangeTrigger.TriggerInstance.hasItems(DDItems.SCULK_TRANSMITTER))
-                .save(advancementConsumer, path("obtain_sculk_transmitter"));
+//        Advancement.Builder.advancement().parent(findAncientTemple)
+//                .display(
+//                        DDItems.SCULK_TRANSMITTER,
+//                        Component.translatable(id + "obtain_sculk_transmitter.title"),
+//                        Component.translatable(id + "obtain_sculk_transmitter.description"),
+//                        null,
+//                        FrameType.TASK,
+//                        true,
+//                        true,
+//                        false
+//                ).addCriterion("sculk_transmitter", InventoryChangeTrigger.TriggerInstance.hasItems(DDItems.SCULK_TRANSMITTER))
+//                .save(advancementConsumer, path("obtain_sculk_transmitter"));
 
         Advancement.Builder.advancement().parent(enterOtherside)
                 .display(

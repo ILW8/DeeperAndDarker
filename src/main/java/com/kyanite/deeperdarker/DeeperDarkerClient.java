@@ -72,9 +72,9 @@ public class DeeperDarkerClient implements ClientModInitializer {
             }
         });
 
-        ItemProperties.register(DDItems.SCULK_TRANSMITTER, new ResourceLocation(DeeperDarker.MOD_ID, "linked"), (itemStack, worldClient, livingEntity, i) ->
-            itemStack.hasTag() && itemStack.getTag().getBoolean("linked") ? 1 : 0
-        );
+//        ItemProperties.register(DDItems.SCULK_TRANSMITTER, new ResourceLocation(DeeperDarker.MOD_ID, "linked"), (itemStack, worldClient, livingEntity, i) ->
+//            itemStack.hasTag() && itemStack.getTag().getBoolean("linked") ? 1 : 0
+//        );
 
         ItemProperties.register(DDItems.SOUL_ELYTRA, new ResourceLocation("broken"), (itemStack, worldClient, livingEntity, i) ->
             SoulElytraItem.isFlyEnabled(itemStack) ? 0 : 1
