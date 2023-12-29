@@ -26,3 +26,9 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: deeperdarker_jars
+          path: |
+            build/libs/*.jar
