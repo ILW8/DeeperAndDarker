@@ -7,7 +7,6 @@ import com.kyanite.deeperdarker.DeeperDarker;
 import com.kyanite.deeperdarker.content.DDBlocks;
 import com.kyanite.deeperdarker.content.DDItems;
 import com.kyanite.deeperdarker.content.blocks.SculkJawBlock;
-//import com.kyanite.deeperdarker.content.items.SculkTransmitterItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.client.model.Model;
@@ -223,7 +222,6 @@ public class DDModelProvider extends FabricModelProvider {
         ModelTemplates.WALL_INVENTORY.create(ModelLocationUtils.getModelLocation(DDBlocks.CUT_GLOOMSLATE_WALL.asItem()), TextureMapping.cube(DDBlocks.CUT_GLOOMSLATE), itemModelGenerator.output);
         itemModelGenerator.generateFlatItem(DDItems.ECHO_BOAT, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(DDItems.ECHO_CHEST_BOAT, ModelTemplates.FLAT_ITEM);
-//        registerSculkTransmitter(itemModelGenerator, (SculkTransmitterItem)DDItems.SCULK_TRANSMITTER);
         registerGeneratedWithPredicate(itemModelGenerator, DDItems.SOUL_ELYTRA, ResourceLocation.DEFAULT_NAMESPACE + ":broken", "_broken");
         registerSpawnEgg(itemModelGenerator, DDItems.SCULK_SNAPPER_SPAWN_EGG);
         registerSpawnEgg(itemModelGenerator, DDItems.SHATTERED_SPAWN_EGG);
@@ -318,9 +316,6 @@ public class DDModelProvider extends FabricModelProvider {
         itemModelGenerator.output.accept(BuiltInRegistries.ITEM.getKey(item).withPrefix("item/"), () -> withoutPredicateJsonObject);
     }
 
-//    private static void registerSculkTransmitter(ItemModelGenerators itemModelGenerator, SculkTransmitterItem item) {
-//        registerGeneratedWithPredicate(itemModelGenerator, item, DeeperDarker.MOD_ID + ":linked", "_on");
-//    }
 
     private static void registerSpawnEgg(ItemModelGenerators itemModelGenerator, Item item) {
         JsonObject model = new JsonObject();

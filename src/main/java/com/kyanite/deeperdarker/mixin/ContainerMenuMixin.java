@@ -12,9 +12,5 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ContainerMenuMixin {
     @Inject(method = "stillValid", at = @At("HEAD"), cancellable = true)
     public void stillValid(Player player, CallbackInfoReturnable<Boolean> cir) {
-//        if(player.getMainHandItem().is(DDItems.SCULK_TRANSMITTER)) {
-//            cir.cancel();
-//            cir.setReturnValue(true);
-//        }
     }
 }

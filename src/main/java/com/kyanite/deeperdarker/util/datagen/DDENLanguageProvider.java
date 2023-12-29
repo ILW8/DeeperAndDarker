@@ -158,7 +158,6 @@ public class DDENLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(DDItems.GRIME_BRICK, "Grime Brick");
         translationBuilder.add(DDItems.ECHO_BOAT, "Echo Boat");
         translationBuilder.add(DDItems.ECHO_CHEST_BOAT, "Echo Boat with Chest");
-//        translationBuilder.add(DDItems.SCULK_TRANSMITTER, "Sculk Transmitter");
         translationBuilder.add(DDItems.SCULK_SNAPPER_SPAWN_EGG, "Sculk Snapper Spawn Egg");
         translationBuilder.add(DDItems.SHATTERED_SPAWN_EGG, "Shattered Spawn Egg");
         translationBuilder.add(DDItems.SCULK_LEECH_SPAWN_EGG, "Sculk Leech Spawn Egg");

@@ -45,10 +45,6 @@ public class DDSounds {
     public static final SoundEvent STALKER_DEATH = register("entity.stalker.death");
     public static final SoundEvent STALKER_HURT = register("entity.stalker.hurt");
 
-//    public static final SoundEvent TRANSMITTER_ERROR = register("item.sculk_transmitter.error");
-//    public static final SoundEvent TRANSMITTER_LINK = register("item.sculk_transmitter.link");
-//    public static final SoundEvent TRANSMITTER_OPEN = register("item.sculk_transmitter.open");
-//    public static final SoundEvent TRANSMITTER_UNLINK = register("item.sculk_transmitter.unlink");
 
     public static final Holder.Reference<SoundEvent> AMBIENT_OTHERSIDE_ADDITIONS = registerReference("ambience.otherside");
     public static final Holder.Reference<SoundEvent> MUSIC_ARRIVAL = registerReference("music.deeperdarker.arrival");
